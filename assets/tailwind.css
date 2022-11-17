@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50;
+}
+
+@layer baseLayer, confirmButtons;
+
+@layer baseLayer {
+  .flex .btn {
+    @apply p-2 bg-[#12b488] text-white rounded-md hover:bg-green-400;
+  }
+
+  .card {
+    @apply p-3 rounded-sm bg-white shadow-md h-full
+  }
+}
+
+@layer confirmButtons {
+  .btn-p {
+    @apply px-6 py-2;
+  }
+}
